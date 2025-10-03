@@ -28,7 +28,7 @@ function Login() {
 
   return (
     <>
-      <div className="flex flex-col items-start gap-3">
+      <form onSubmit={handleSubmit} className="flex flex-col items-start gap-3">
         <input
           type="text"
           value={username}
@@ -53,8 +53,8 @@ function Login() {
           required
           className="border rounded px-3 py-2"
         />
-        <button onClick={handleSubmit}>Login</button>
-      </div>
+        <button>Login</button>
+      </form>
     </>
   );
 }
