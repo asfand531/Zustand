@@ -19,7 +19,7 @@ function Login() {
       return;
     }
 
-    login({ username, email, password });
+    login({ username, email });
 
     setUsername("");
     setEmail("");
