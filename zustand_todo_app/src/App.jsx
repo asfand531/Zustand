@@ -8,10 +8,6 @@ function App() {
   const [inputValue, setInputValue] = useState("");
 
   const handleAddTodo = () => {
-    if (inputValue.trim() === "") {
-      alert("Please enter your todo first!");
-      return;
-    }
     addTodo(inputValue);
     setInputValue("");
   };
