@@ -86,6 +86,16 @@ input:not(:placeholder-shown) ~ label {
   width: fit-content;
 }
 
+.addBtn:disabled {
+  background: rgba(26, 26, 26, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: not-allowed;
+
+  &:hover {
+    border-color: rgba(100, 108, 255, 0.5);
+  }
+}
+
 table,
 tr,
 td,

@@ -28,9 +28,15 @@ function App() {
             required
           />
           <label>Todo here...</label>
-          <button className="addBtn" onClick={handleAddTodo}>
-            Add Todo
-          </button>
+          {inputValue === "" ? (
+            <button className="addBtn" disabled={true}>
+              Add Todo
+            </button>
+          ) : (
+            <button className="addBtn" onClick={handleAddTodo}>
+              Add Todo
+            </button>
+          )}
         </div>
 
         <div className="table_container mt-3">
