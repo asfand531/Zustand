@@ -1,5 +1,5 @@
 import useTodoStore from "./store/store";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./App.css";
 
 function App() {
@@ -15,8 +15,6 @@ function App() {
     addTodo(inputValue);
     setInputValue("");
   };
-
-  console.log(todos);
 
   return (
     <>
@@ -76,7 +74,7 @@ function App() {
                     <button onClick={() => removeTodo(i)}>Remove</button>
                     <button
                       onClick={() => (
-                        updateTodo(i, setInputValue(t)), removeTodo(i)
+                        updateTodo(i, setInputValue(t.newTodo)), removeTodo(i)
                       )}
                     >
                       Edit
