@@ -32,7 +32,7 @@ function App() {
           <button
             className="addBtn"
             onClick={handleAddTodo}
-            disabled={inputValue === ""}
+            disabled={inputValue.trim() === ""}
           >
             Add Todo
           </button>
